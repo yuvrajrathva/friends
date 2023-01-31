@@ -71,6 +71,19 @@ html {
   align-items: center;
 }
 
+.hamburger-menu {
+    display: none;
+}
+
+.navbar-mobile {
+    display: none;
+    /* border: 2px solid white; */
+}
+
+.navbar-mobile-link-profile:hover {
+    color: #e2f7f5;
+    cursor: pointer;
+}
 @media only screen and (max-width: 1300px) {
   #navbar-mobile-eventCheckbox {
     display: none;
@@ -150,7 +163,18 @@ html {
     transition: 1s;
   }
 }
-
+@media only screen and (max-width:1220px){
+    .partnering-description{
+        justify-content: center;
+        align-items: center;
+  flex-wrap:wrap;
+    }
+    .venue-content{
+        justify-content: center;
+        align-items: center;
+  flex-wrap:wrap;
+    }
+}
 /* Slides */
 * {
   box-sizing: border-box;
@@ -172,9 +196,9 @@ img {
   position: relative;
   margin: auto;
 }
-.slideshow-container img {
+/* .slideshow-container img {
   height: 80vh;
-}
+} */
 /* Next & previous buttons */
 .prev,
 .next {
@@ -285,7 +309,7 @@ hr{
     background-color: rgb(210, 207, 207);
     opacity: 0.5;
     border-radius: 5px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 .about {
   display: flex;
@@ -322,6 +346,9 @@ hr{
   margin: 50px;
   width: 80%;
   align-items: center;
+}
+.partnering-description img{
+    width: 100%;
 }
  .jodhpur-description{
     display: flex;
@@ -375,13 +402,13 @@ tr:nth-child(even) {
     justify-content: space-evenly;
 }
 .venue img{
-    width: 400px;
+    width: 100%;
     height: 300px;
     margin: 50px;
 }
 .venue iframe{
     margin: 50px;
-    width:600px;
+    width:100%;
     height:300px;
 }
 /* Reach Us */
