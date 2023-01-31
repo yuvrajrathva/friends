@@ -315,11 +315,24 @@ hr{
   text-align: center;
   line-height: 1.8rem;
 }
-.jodhpur-description, .partnering-description {
-  width: 80%;
-  margin: 50px;
-}
 
+.partnering-description{
+    display: flex;
+    flex-direction: row;
+  margin: 50px;
+  width: 80%;
+  align-items: center;
+}
+ .jodhpur-description{
+    display: flex;
+    flex-direction: column;
+  margin: 50px;
+  width: 80%;
+  align-items: center;
+ }
+.jodhpur-description img{
+    width: 100%;
+}
 /* program */
 
 th,
