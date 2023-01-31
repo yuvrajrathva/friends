@@ -37,6 +37,8 @@ html {
     font-size: max(24px,4vmin);
     font-weight: 900;
     padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
 }
 .navbar-right-section {
   display: flex;
@@ -375,7 +377,7 @@ tr:nth-child(even) {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 100px;
+    margin: 50px 100px;
 }
 /* Footer */
 .footer{
@@ -384,12 +386,17 @@ tr:nth-child(even) {
   background-color: rgb(7, 52, 53);
   width: 100%;
   color: #fff;
-  gap: 10px;
+  gap: 50px;
   justify-content: space-evenly;
   padding: 50px;
 }
 
-
+.iit{
+    width: 50%;
+}
+.useful-links{
+    width: 20%;
+}
 .useful-links a{
     text-decoration: underline;
     color: #fff;
