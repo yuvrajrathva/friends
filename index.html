@@ -9,11 +9,18 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="navbar">
+    <div id="navbar" class="">
       <nav class="navbar-left-section">
-        <div class="navbar-logo"><img id="navbar-logo-img" src="./logo1.gif" alt=""></div>
+        <div class="navbar-logo"><a href="#"><img id="navbar-logo-img" src="./logo1.gif" alt=""></a></div>
         <div class="navbar-title">Conclave for Friends</div>
       </nav>
+      <div class="nav-btn" onclick="myFunction()">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
       <nav class="navbar-right-section" id="mynavbar-right-section">
         <a href="#">
           <div class="navbar-right-section-item">Home</div>
@@ -27,9 +34,6 @@
         <a href="#reachUs">
           <div class="navbar-right-section-item">Reach Us</div>
         </a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
       </nav>
     </div>
     <div class="slideshow-container">

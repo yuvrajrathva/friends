@@ -34,10 +34,10 @@ function showSlides(n) {
 
 // Navbar
 function myFunction() {
-  var x = document.getElementById("mynavbar-right-section");
-  if (x.className === "navbar-right-section") {
-    x.className += " responsive";
+  var x = document.getElementById("navbar");
+  if (x.className === "") {
+    x.className += "navbar";
   } else {
-    x.className = "navbar-right-section";
+    x.className = "";
   }
 }

@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Teko:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
 html {
   scroll-behavior: smooth;
   font-family: 'Bitter', serif;
@@ -89,38 +96,8 @@ html {
 .navbar-right-section .icon {
   display: none;
 }
-@media screen and (max-width: 1300px) {
-  .navbar-right-section a {display: none;}
-  .navbar-right-section a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .navbar-right-section.responsive {position: relative;}
-  .navbar-right-section.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar-right-section.responsive a {
-    /* float: none; */
-    display: block;
-    text-align: left;
-    top: 10vh;
-  }
-}
-
 
 /* Slides */
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
-}
 .mySlides {
   display: none;
 }
@@ -133,6 +110,7 @@ img {
   width: 100%;
   position: relative;
   margin: auto;
+  z-index: -1;
 }
 /* .slideshow-container img {
   height: 80vh;
@@ -428,4 +406,68 @@ tr:nth-child(even) {
   width: 100%;
   margin: auto 20px;
 }
+}
+#navbar > .nav-btn {
+  display: none;
+}
+@media (max-width:1300px){
+  .navbar-right-section a{
+    display: none;
+  }
+}
+@media (max-width:1300px) {
+  .navbar-title{
+    display: none;
+  }
+  #navbar .navbar-right-section{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  #navbar > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    /* top: 0px; */
+  }
+  #navbar > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    cursor: pointer;
+  }
+  .navbar > .nav-btn > label:hover,.navbar  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  #navbar > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+    z-index: 999;
+  }
+  .navbar > .navbar-right-section {
+    position:relative;
+    display: block;
+    width: 100%;
+    /* height: 0px; */
+    transition: all 0.3s ease-in;
+    /* overflow-y: hidden; */
+  top: 15vh;
+  padding: 0;
+  }
+  .navbar > .navbar-right-section > a {
+    display: block;
+    background-color: #007d8b;
+    width: 100%;
+    z-index: 999;
+  }
+  .navbar > #nav-check:not(:checked) ~ .navbar-right-section {
+    height: 0px;
+  }
+  .navbar > #nav-check:checked ~ .navbar-right-section {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
 }
