@@ -5,7 +5,7 @@ html {
 }
 #navbar {
   box-sizing: border-box;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   color: #fff;
   font-family: "Exo 2", sans-serif;
@@ -34,7 +34,8 @@ html {
   height: 100%;
 }
 .navbar-title{
-    font-size: max(24px,4vmin);
+    /* font-size: max(24px,4vmin); */
+    font-size: 2vw;
     font-weight: 900;
     padding: 10px;
     text-transform: uppercase;
@@ -88,7 +89,9 @@ html {
   #navbar-mobile-eventCheckbox {
     display: none;
   }
-
+  .navbar-title{
+    display: none;
+  }
   #navbar-mobile-eventCheckbox:checked ~ .dropdown_menu li,
   #navbar-mobile-eventCheckbox:checked ~ .dropdown_menu--animated {
     display: block;
