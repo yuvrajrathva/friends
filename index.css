@@ -448,7 +448,7 @@ tr:nth-child(even) {
     z-index: 999;
   }
   .navbar > .navbar-right-section {
-    position:relative;
+    position:absolute;
     display: block;
     width: 100%;
     /* height: 0px; */
@@ -459,6 +459,7 @@ tr:nth-child(even) {
   }
   .navbar > .navbar-right-section > a {
     display: block;
+    /* position: absolute; */
     background-color: #007d8b;
     width: 100%;
     z-index: 999;
