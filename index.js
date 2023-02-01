@@ -32,3 +32,12 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
+// Navbar
+function myFunction() {
+  var x = document.getElementById("mynavbar-right-section");
+  if (x.className === "navbar-right-section") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar-right-section";
+  }
+}
