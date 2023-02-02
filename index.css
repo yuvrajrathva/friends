@@ -24,6 +24,7 @@ html {
   font-size: 3.8vmin;
   margin: 30px auto 10px;
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 #navbar {
   box-sizing: border-box;
@@ -70,12 +71,13 @@ html {
 .conclave-title{
     color: #86c1e9;
     font-weight: 600;
-    font-size: 3.5vmin;
+    font-size: max(19px,3.5vmin);
     padding: 10px;
 }
 .navbar-title .conclave-date{
   color: #fff;
-    font-size: 2.5vmin;
+    font-size: max(15px,2.5vmin);
+    letter-spacing: 0.1rem;
 }
 .initalbar-logo{
   display: flex;
@@ -105,7 +107,7 @@ html {
 }
 
 #navbar-logo-img {
-  margin-top: 0.5vmin;
+  margin: 0.5vmin;
   max-height: 13vh;
 }
 
@@ -296,15 +298,18 @@ hr{
   line-height: 1.8rem;
 }
 
-.partnering-description{
+.partnering-section{
     display: flex;
     flex-direction: row;
   margin: 50px;
   width: 80%;
   align-items: center;
 }
-.partnering-description img{
+.partnering-section img{
     width: 40%;
+}
+.partnering-description {
+  margin: 50px;
 }
  .jodhpur-description{
     display: flex;
@@ -356,14 +361,17 @@ tr:nth-child(even) {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 .venue img{
     width: 100%;
     height: 300px;
     margin: 5% auto;
+    padding: auto 10px;
 }
 .venue iframe{
     margin: 5% auto;
+    padding: auto 10px;
     width:100%;
     height:300px;
 }
@@ -414,23 +422,37 @@ tr:nth-child(even) {
 
 
 @media only screen and (max-width:1220px){
-    .partnering-description{
+    .partnering-section{
         justify-content: center;
         align-items: center;
   flex-wrap:wrap;
     }
+    .partnering-section img{
+    width: 80%;
+}
+.partnering-description {
+  margin: 20px 0 auto;
+}
     .venue-content{
         justify-content: center;
         align-items: center;
   flex-wrap:wrap;
     }
-    .venue img{
-      margin: 0;
+    /* .venue img{
+      margin: 10px;
+    } */
+    .venue .iframe{
+      width: 100%;
+      margin: auto 5%;
     }
     .program-table{
       display: flex;
   flex-direction: column;
+  margin: 25px;
 }
+  .reachUs-contacts {
+    margin: 20px;
+  }
 .footer{
   align-items: center;
   justify-content: center;
@@ -459,9 +481,9 @@ tr:nth-child(even) {
   }
 }
 @media (max-width:1300px) {
-  .navbar-title{
+  /* .navbar-title{
     display: none;
-  }
+  } */
   #navbar .navbar-right-section{
     display: flex;
     flex-direction: column;
