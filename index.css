@@ -23,6 +23,7 @@ html {
   text-transform: uppercase;
   font-size: 3.8vmin;
   margin: 30px auto 10px;
+  letter-spacing: 0.1rem;
 }
 #navbar {
   box-sizing: border-box;
@@ -59,9 +60,9 @@ html {
     /* display: flex; */
     font-size: 2vw;
     font-weight: 900;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    /* letter-spacing: 0.2rem; */
     margin: auto;
     /* justify-content: space-around; */
     text-align: center;
@@ -262,7 +263,7 @@ hr{
     width: 80%;
     height: 3px;
     background-color: rgb(210, 207, 207);
-    /* opacity: 0.5; */
+/*     opacity: 0.5; */
     border-radius: 5px;
     /* margin-top: 50px; */
 }
